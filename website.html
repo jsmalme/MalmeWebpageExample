@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+<meta content="text/html; charset=utf-8" />
+<title>Website example</title>
+<link rel = "stylesheet" href = "StyleSheet.css">
+<script src = "tablecode.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	fillTable();
+	console.log("called fillTable");
+});
+</script>
+
+</head>
+
+<body>
+
+<div class = "leftdiv">
+
+<form  = style = "position:relative; left:27%">
+<label for = "first">First Name:</label><input type="text" name = "firstname" id = "firstName"><br>
+<label for = "last">Last Name:</label><input type = "text" name = "lastname" id = "lastName"><br>
+<label for = "home">Home:</label><input type = "text" name = "home" id = "Home"><br>
+<input type = "Create" value ="Create New Person" id = "create">
+</form>
+
+</div>
+
+<div class = "rightdiv">
+<table id = "peopleTable">
+	<tr>
+   		<th>First Name</th>
+    	<th>Last Name</th>
+    	<th>Home</th>
+    </tr>
+</table>
+</div>
+
+<script>
+$("#create").click(function(){
+	addPerson();
+});
+</script>
+</body>
+</html>

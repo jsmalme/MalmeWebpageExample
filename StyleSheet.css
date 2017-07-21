@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:lightgray;
+}
+
+.leftdiv{
+	float:left;
+	padding:250px 0;
+	width:50%;
+}
+
+.rightdiv{
+	float:right;
+	padding:75px 0;
+	width:50%;
+}
+
+label{
+	text-align:right;
+	width:100px;
+	float:left;
+	font-weight:bold;
+}
+
+input[type=text]{
+	border-radius:5px;
+}
+
+input[type=Create]{
+	display: block;
+	margin-left:60px;
+	margin-top:15px;
+	border:medium;
+	border-radius:25px;
+	background-color:green;
+	height:75px;
+	width:200px;
+	font-size:14px;
+	font-weight:bold;
+	color:white;
+	text-align:center;
+}
+
+table{
+	margin:0 auto;
+	width:100%;
+	border-collapse:collapse;
+}
+
+td, th{
+	border: 1px solid #000;
+	text-align:left;
+	padding:10px;
+}
+
+tr:nth-child(even){
+	background-color:darkgray;
+}
+	
+
+	
+	
+	
+
+
+
